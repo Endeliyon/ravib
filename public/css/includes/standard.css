@@ -1,0 +1,16 @@
+@media (min-width:768px) {
+	div.standard {
+		text-align:right;
+		position:relative;
+		top:8px;
+		right:100px;
+		height:0;
+	}
+}
+
+@media (max-width:767px) {
+	div.standard {
+		text-align:right;
+		margin-right:80px;
+	}
+}

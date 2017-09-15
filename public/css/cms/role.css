@@ -1,0 +1,17 @@
+div.members {
+	margin-top:20px;
+}
+
+div.role {
+	margin-top:3px;
+	min-width:250px;
+	padding-right:20px;
+	float:left;
+	position:relative;
+}
+
+div.role input.role {
+	position:relative;
+	top:2px;
+	margin-right:3px;
+}

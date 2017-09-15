@@ -1,0 +1,32 @@
+table.table th:first-child {
+	width:30%;
+}
+
+table.table th:nth-child(3) {
+	width:75px;
+}
+
+form.clear {
+	display:inline-block;
+}
+
+div.well input[type=checkbox] {
+    margin-right:10px;
+	margin-left:0;
+}
+
+textarea#style:focus {
+	height:250px;
+}
+
+textarea#editor {
+	max-width:100%;
+	height:250px;
+}
+
+@media (max-width:767px) {
+	table.table th:nth-child(3),
+	table.table td:nth-child(3) {
+		display:none;
+	}
+}

@@ -1,0 +1,11 @@
+div.form-control {
+	margin-bottom:5px;
+	max-width:500px;
+}
+
+@media (max-width:767px) {
+	table.table th:nth-child(2),
+	table.table td:nth-child(2) {
+		display:none;
+	}
+}

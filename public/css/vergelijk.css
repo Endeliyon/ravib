@@ -1,0 +1,76 @@
+table.list {
+	width:100%;
+}
+
+table.list th.compare {
+	width:80px;
+}
+
+table.list td.compare {
+	padding-left:22px;
+}
+
+table.list td.compare input {
+	margin:0;
+	position:relative;
+	top:2px;
+}
+
+table.compare {
+	margin-top:50px;
+	width:100%;
+}
+
+@media (min-width:768px) {
+	table.compare th.case div {
+		text-align:left;
+		padding:0;
+		transform:rotate(270deg);
+		width:100px;
+		position:relative;
+		bottom:35px;
+	}
+}
+
+table.compare td {
+	vertical-align:top;
+	padding:0 5px;
+}
+
+table.compare td.risk {
+	color:#000000;
+	vertical-align:middle;
+	height:30px;
+}
+
+@media (min-width:768px) {
+	table.compare td.risk {
+		text-align:center;
+	}
+}
+
+table.compare td.risk_kritiek {
+	background-color:#ff0000;
+}
+
+table.compare td.risk_hoog {
+	background-color:#ff6000;
+}
+
+table.compare td.risk_gemiddeld {
+	background-color:#ffc000;
+}
+
+table.compare td.risk_laag {
+	background-color:#00ff00;
+}
+
+table.compare td.accept_yes {
+	text-decoration:line-through;
+	background-color:#ffffff;
+}
+
+input.button, a.button {
+	margin-top:15px;
+	margin-right:10px;
+}

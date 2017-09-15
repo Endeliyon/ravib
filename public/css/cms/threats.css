@@ -1,0 +1,23 @@
+table.table th:first-child {
+	width:65px;
+}
+
+div.iso_measures div.measure {
+	margin-right:15px;
+	padding-left:25px;
+}
+
+div.iso_measures div.measure input {
+	position:relative;
+	top:2px;
+	left:-25px;
+	margin-right:-20px;
+}
+
+div.iso_measures div.measure span {
+	cursor:pointer;
+}
+
+div.iso_measures div.description {
+	display:none;
+}

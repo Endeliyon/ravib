@@ -1,0 +1,8 @@
+<html>
+<body>
+<p>Hallo [FULLNAME],</p>
+<p>Voor je RAVIB account op [HOSTNAME] is een aanvraag ingestuurd om een nieuw wachtwoord in te stellen. Dit wachtwoord kunt u via <a href="https://[HOSTNAME]/wachtwoord?key=[KEY]">deze link</a> opnieuw instellen.</p>
+<p>Indien u niet om een nieuw wachtwoord heeft gevraagd, dan kunt u deze e-mail negeren.</p>
+<p>Met vriendelijke groet,<br>De beheerder</p>
+</body>
+</html>

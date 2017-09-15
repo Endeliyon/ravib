@@ -1,0 +1,8 @@
+<html>
+<body>
+<p>Hallo [FULLNAME],</p>
+<p>Er is een account voor je aangemaakt op de <a href="http://[HOSTNAME]/">[TITLE]</a> website. De inloggegevens voor dit account zijn:</p>
+<p>Gebruikersnaam: [USERNAME]<br>Wachtwoord: [PASSWORD]</p>
+<p>Met vriendelijke groet,<br>De beheerder</p>
+</body>
+</html>

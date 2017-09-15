@@ -1,0 +1,36 @@
+@media (min-width:768px) {
+	div.iso_standard {
+		float:right;
+		margin-top:-35px;
+	}
+}
+
+@media (max-width:767px) {
+	div.iso_standard {
+		margin-bottom:10px;
+	}
+}
+
+div.panel ul {
+	list-style:none;
+	padding:0;
+}
+
+div.panel li {
+	display:inline-block;
+	width:100px;
+	text-align:center;
+	margin-top:15px;
+	margin-bottom:10px;
+	padding-left:20px;
+}
+
+div.panel img {
+	display:block;
+	margin:0 auto;
+	height:50px;
+}
+
+.panel-body {
+	padding-bottom:0;
+}

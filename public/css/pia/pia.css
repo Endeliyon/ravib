@@ -1,0 +1,48 @@
+h2 {
+	margin-bottom:15px;
+}
+
+div.question {
+	margin-bottom:10px;
+}
+
+div.options {
+	margin-bottom:15px;
+}
+
+div.answer input {
+	margin-right:5px;
+}
+
+input.button, a.button {
+	margin:0 10px 15px 0;
+}
+
+div.answers div {
+	display:none;
+}
+
+@media (max-width:767px) {
+	div.answers div {
+		border-top:1px dashed #ff8000;
+		padding-top:10px;
+	}
+}
+
+@media (min-width:768px) {
+	form {
+		width:350px;
+		float:left;
+	}
+
+	div.answers {
+		width:350px;
+		float:right;
+	}
+}
+
+@media (min-width:992px) {
+	form, div.answers {
+		width:400px;
+	}
+}

@@ -1,0 +1,19 @@
+table.table th {
+	width:120px;
+}
+
+table.table th:first-child {
+	width:150px;
+}
+
+table.table th:last-child {
+	width:auto;
+}
+
+span.glyphicon-ok {
+	color:green;
+}
+
+span.glyphicon-remove {
+	color:red;
+}

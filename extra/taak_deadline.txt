@@ -1,0 +1,11 @@
+<html>
+<body>
+<p>Hallo [NAME],</p>
+
+<p>Vandaag is de deadline voor <b>[MEASURE]</b> inzake [CASE].</p>
+
+<p style="white-space:pre-wrap ; border-left:1px solid #ff0000 ; padding-left:10px">[INFORMATION]</p>
+
+<p>Deze e-mail is automatisch gegenereerd door RAVIB.</P>
+</body>
+</html>

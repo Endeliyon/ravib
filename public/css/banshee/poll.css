@@ -1,0 +1,32 @@
+/* Vote
+ */
+div.active_poll {
+	width:200px;
+	min-height:200px;
+}
+
+div.active_poll ul {
+	list-style:none;
+	padding:0;
+}
+
+div.active_poll ul li input {
+	margin-right:5px;
+}
+
+div.active_poll p {
+	margin-top:10px;
+	font-size:10px;
+}
+
+/* Results
+ */
+div.active_poll ul.answers li {
+	margin-top:5px;
+}
+
+div.active_poll ul.answers li div.percentage {
+	height:2px;
+	border:1px solid #6060ff;
+	background-color:#a0a0ff;
+}

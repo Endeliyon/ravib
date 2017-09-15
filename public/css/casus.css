@@ -1,0 +1,77 @@
+table.table td:nth-child(2) {
+	width:200px;
+}
+
+table.table td:nth-child(3) {
+	width:110px;
+}
+
+table.table td:nth-child(4) {
+	width:165px;
+}
+
+table.table td:nth-child(5) {
+	width:40px;
+}
+
+table.table td a.btn:nth-child(n+2) {
+	margin-left:10px;
+}
+
+div.visibility {
+	float:right;
+	margin-right:0px;
+}
+
+@media (min-width:992px) {
+	h3 {
+		margin-top:0;
+	}
+}
+
+@media (max-width:991px) {
+	table.table th:nth-child(2),
+	table.table td:nth-child(2) {
+		display:none;
+	}
+}
+
+@media (max-width:767px) {
+	table.table th:nth-child(3) {
+		display:none;
+	}
+
+	table.table td:nth-child(1),
+	table.table td:nth-child(3) {
+		display:block;
+		border-top:none;
+	}
+
+	table.table td:nth-child(1) {
+		font-weight:bold;
+		height:37px;
+	}
+
+	table.table td:nth-child(3) {
+		border-bottom:1px solid #dddddd;
+		width:100%;
+	}
+	table.table tr:last-child td:nth-child(3) {
+		border-bottom:none;
+	}
+
+	table.table td:nth-child(4) {
+		width:110px;
+	}
+
+	table.table td:nth-child(4) a.btn {
+		display:block;
+		width:100px;
+		padding:3px 0;
+	}
+
+	table.table td a.btn:nth-child(n+2) {
+		margin-top:5px;
+		margin-left:0;
+	}
+}

@@ -1,0 +1,145 @@
+div.progress {
+	cursor:pointer;
+}
+
+div.progress div.progress-bar-idle {
+	background-color:#505050;
+	background-image:linear-gradient(rgb(96, 96, 96) 0px, rgb(48, 48, 48) 100%);
+}
+
+div.categories {
+	display:none;
+	padding-bottom:15px;
+}
+
+div.categories h3 {
+	margin-top:0;
+}
+
+div.categories div.progress {
+	margin-bottom:5px;
+}
+
+table.iso {
+	width:100%;
+	margin-bottom:15px;
+}
+
+table.iso th a {
+	color:#303030;
+}
+
+table.iso th:first-child {
+	width:45px;
+}
+
+table.iso th:nth-child(4) {
+	min-width:145px;
+}
+
+table.iso th:nth-child(5) {
+	min-width:100px;
+}
+
+table.iso td:nth-child(7) {
+	width:25px;
+}
+
+table.iso tr.category td {
+	font-weight:bold;
+	color:#803000;
+	background-color:#f0f0f0;
+	border-top:1px solid #d0d0d0;
+}
+
+table.iso td.name {
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+table.iso div.info {
+	display:none;
+}
+
+table.iso td.laag {
+	color:#00c000;
+}
+
+table.iso td.gemiddeld {
+	font-weight:bold;
+	color:#ffd000;
+}
+
+table.iso td.hoog {
+	font-weight:bold;
+	color:#ff8000;
+}
+
+table.iso td.kritiek {
+	font-weight:bold;
+	color:#ff0000;
+}
+
+table.iso td.overdue {
+	color:#ff0000;
+}
+
+table.iso td.relevant_no {
+	color:#b0b0b0;
+	text-decoration:line-through;
+}
+
+table.iso tr.data td:nth-child(6) {
+	text-align:center;
+}
+
+table.iso tr.information {
+	background-color:#fdf8f4;
+	display:none;
+}
+
+table.iso tr.information td:nth-child(2) {
+	text-align:right;
+	padding-right:15px;
+}
+
+input#done {
+	margin-left:3px;
+}
+
+span.glyphicon {
+	padding:5px;
+	margin:-5px;
+}
+
+div.dialogs {
+	display:none;
+}
+
+div.ui-dialog div.ui-dialog-content {
+	font-size:14px;
+	white-space:pre-wrap;
+}
+
+@media (max-width:767px) {
+	table.iso thead tr th:nth-child(2),
+	table.iso tbody tr.data td:nth-child(2) {
+		display:none;
+	}
+}
+
+@media (max-width:450px) {
+	table.iso thead tr th:nth-child(5),
+	table.iso tbody tr td:nth-child(5),
+	table.iso thead tr th:nth-child(7),
+	table.iso tbody tr td:nth-child(7) {
+		display:none;
+	}
+}
+
+@media (max-width:550px) {
+	table.iso thead tr th:nth-child(4),
+	table.iso tbody tr td:nth-child(4) {
+		display:none;
+	}
+}

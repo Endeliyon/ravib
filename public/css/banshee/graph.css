@@ -1,0 +1,59 @@
+div.graph {
+	position:relative;
+}
+
+div.graph div.info {
+	height:20px;
+	margin-left:70px;
+}
+
+div.graph div.info span.text {
+	float:right;
+	text-align:right;
+}
+
+div.graph div.maxy {
+	text-align:right;
+	position:absolute;
+	top:75px;
+	left:20px;
+}
+
+div.graph div.bars {
+	margin-left:50px;
+	border:1px solid #e0e0e0;
+	padding:2px;
+}
+
+div.graph table {
+	background-color:#ffffff;
+	width:100%;
+}
+
+div.graph table td {
+	vertical-align:bottom;
+	border:1px solid #ffffff;
+}
+
+div.graph table td.clickable {
+	cursor:pointer;
+}
+
+div.graph table td div {
+	background-color:#ff0000;
+}
+
+div.graph table td:hover div {
+	background-color:#ffa000;
+}
+
+@media (max-width:767px) {
+	div.graph div.maxy {
+		display:inline-block;
+		top:56px;
+	}
+
+	div.graph div.bars {
+		margin-left:0;
+	}
+}

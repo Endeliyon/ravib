@@ -1,0 +1,21 @@
+div.threats {
+	margin-bottom:15px;
+}
+
+div.threats div.title span {
+	cursor:pointer;
+	margin-left:5px;
+}
+
+div.threats div.description {
+	display:none;
+	margin-left:25px;
+}
+
+div.title {
+	margin-left:20px;
+}
+
+div.title input[type=checkbox] {
+	margin-left:-20px;
+}

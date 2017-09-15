@@ -1,0 +1,65 @@
+#!/usr/bin/php
+<?php
+	chdir(dirname($argv[0])."/database");
+	require("../libraries/banshee.php");
+
+	$db = new MySQLi_connection(DB_HOSTNAME, DB_DATABASE, DB_USERNAME, DB_PASSWORD);
+	if ($db->connected == false) {
+		exit("Internal error: database not available.\n");
+	}
+
+	function get_case($db, $case_id) {
+		static $cache = array();
+
+		if ($cache[$case_id] === null) {
+			$query = "select c.name, u.fullname, u.email from users u, cases c ".
+					 "where c.organisation_id=u.organisation_id and c.id=%d";
+			if (($case = $db->execute($query, $case_id)) === false) {
+				return false;
+			}
+			$cache[$case_id] = $case[0];
+		}
+
+		return $cache[$case_id];
+	}
+
+	$query = "select t.case_id, t.info, p.name, p.email, concat(m.number, %s, m.name) as measure, reviewer_id ".
+	         "from progress_tasks t, progress_people p, iso_measures m, cases c ".
+	         "where t.actor_id=p.id and t.iso_measure_id=m.id and t.case_id=c.id ".
+	         "and t.deadline=date(now()) and done=%d";
+	if (($tasks = $db->execute($query, " ", NO)) === false) {
+		exit("Database error.\n");
+	}
+
+	if (($message = file_get_contents("../extra/taak_deadline.txt")) === false) {
+		exit("Can't load message template.\n");
+	}
+
+	foreach ($tasks as $task) {
+		if (($case = get_case($db, $task["case_id"])) === false) {
+			continue;
+		}
+
+		$replace = array(
+			"NAME"        => $task["name"],
+			"CASE"        => $case["name"],
+			"INFORMATION" => $task["info"],
+			"MEASURE"     => $task["measure"]);
+
+		$mail = new email("Deadline inzake ".$case["name"], "no-reply@ravib.nl", "RAVIB");
+		$mail->set_message_fields($replace);
+		$mail->message($message);
+
+		if ($task["reviewer_id"] != null) {
+			$reviewer = $db->execute("select * from progress_people where id=%d", $task["reviewer_id"]);
+			$reviewer = $reviewer[0];
+			$mail->cc($reviewer["email"], $reviewer["fullname"]);
+		}
+
+		if ($case["email"] != $task["email"]) {
+			$mail->cc($case["email"], $case["fullname"]);
+			$mail->reply_to($case["email"], $case["fullname"]);
+		}
+		$mail->send($task["email"], $task["name"]);
+	}
+?>

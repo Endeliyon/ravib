@@ -1,0 +1,88 @@
+table.iso {
+	width:100%;
+	margin-bottom:15px;
+}
+
+table.iso td {
+	background-color:#ffffff;
+	border-top:1px dashed #d0d0d0;
+}
+
+table.iso tr.extra {
+	display:none;
+}
+
+table.iso tr.extra td {
+	border-top:none;
+	background-color:#fdf8f4;
+}
+
+@media (min-width:768px) {
+	table.iso th.isonr {
+		width:45px;
+	}
+
+}
+
+table.iso > thead > tr > th.risk {
+	width:80px;
+}
+
+table.iso tr.category td {
+	font-weight:bold;
+	color:#803000;
+	background-color:#f0f0f0;
+	border-top:1px solid #d0d0d0;
+}
+
+table.iso td.name {
+	cursor:pointer;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+table.iso td.laag {
+	font-weight:bold;
+	color:#00c000;
+}
+
+table.iso td.gemiddeld {
+	font-weight:bold;
+	color:#ffd000;
+}
+
+table.iso td.hoog {
+	font-weight:bold;
+	color:#ff8000;
+}
+
+table.iso td.kritiek {
+	font-weight:bold;
+	color:#ff0000;
+}
+
+table.iso td.relevant_no {
+	color:#b0b0b0;
+	text-decoration:line-through;
+}
+
+table.extra {
+	width:100%;
+	margin-bottom:10px;
+}
+
+table.extra tr.description td {
+	font-style:italic;
+	padding-left:10px;
+	border-left:1px solid #a00000;
+	padding-bottom:5px;
+}
+
+table.extra td {
+	border-top:none;
+	vertical-align:top;
+}
+
+input.save {
+	display:none;
+}

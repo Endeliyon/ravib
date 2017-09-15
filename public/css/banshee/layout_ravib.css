@@ -1,0 +1,314 @@
+html {
+	height:100%;
+}
+
+body {
+	font-family:sans-serif;
+	font-weight:300;
+	height:100%;
+}
+
+h1 {
+	font-size:30px;
+	font-weight:300;
+	margin-top:0;
+}
+
+h2 {
+	font-size:20px;
+	font-weight:300;
+	margin-bottom:10px;
+	padding-bottom:2px;
+	border-bottom:1px solid #e06060;
+}
+
+h3 {
+	font-size:18px;
+	font-weight:300;
+}
+
+a {
+	color:#d00000;
+}
+
+a:hover {
+	color:#d00000;
+	text-decoration:underline;
+}
+
+ul {
+	padding-left:15px;
+}
+
+div.left {
+	float:left;
+}
+
+div.right {
+	float:right;
+}
+
+div.clear {
+	clear:both;
+}
+
+img.title_icon {
+	float:right;
+	margin-top:-20px;
+	margin-bottom:-20px;
+}
+
+div.system {
+	position:relative;
+	top:-20px;
+}
+
+div.container {
+	max-width:900px;
+}
+
+div.content div.case {
+	text-align:right;
+	font-size:18px;
+	font-style:italic;
+}
+
+@media (min-width:768px) {
+	div.content div.case {
+		height:0;
+		position:relative;
+		top:-35px;
+	}
+}
+
+@media (max-width:767px) {
+	table.table-xs th,
+	table.table-xs td {
+		display:block;
+	}
+
+	table.table-xs th:last-child {
+		border:none;
+	}
+	table.table-xs th:first-child,
+	table.table-xs td:first-child {
+		border-top:2px solid #808080;
+	}
+}
+
+@media (max-width:479px) {
+	div.btn-group {
+		width:100%;
+		max-width:100%;
+	}
+
+	div.btn-group .btn {
+		float:none;
+		width:100%;
+		padding:8px 0;
+		border-radius:0;
+	}
+
+	div.btn-group > .btn:first-child,
+	div.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+		border-top-left-radius:4px;
+		border-top-right-radius:4px;
+		margin-left:-1px;
+	}
+
+	div.btn-group > .btn:last-child,
+	div.btn-group > .btn:last-child:not(:first-child) {
+		border-bottom-left-radius:4px;
+		border-bottom-right-radius:4px;
+	}
+}
+
+/* Menu
+ */
+nav.navbar {
+	margin-bottom:0;
+	border-radius:0;
+}
+
+nav.navbar div#navbar a {
+	color:#000000;
+}
+
+@media (min-width:768px) {
+	nav.navbar div#navbar {
+		float:right;
+	}
+	nav.navbar img.logo {
+		height:50px;
+		position:relative;
+		top:10px;
+	}
+}
+
+@media (max-width:767px) {
+	nav.navbar div#navbar {
+		background-color:#d0d0d0;
+	}
+
+	nav.navbar img.logo {
+		height:30px;
+		position:relative;
+		top:15px;
+		left:15px;
+	}
+}
+
+nav.navbar div.navbar-header button {
+	border:2px solid #a00000;
+}
+nav.navbar div.navbar-header button span {
+	background-color:#e04000;
+}
+
+nav.navbar div.title {
+	color:#c00000;
+	font-weight:bold;
+	font-size:34px;
+}
+nav.navbar div.title:hover a {
+	text-decoration:none;
+}
+
+@media (max-width:767px) {
+	nav.navbar div.title img {
+		position:relative;
+		top:-5px;
+		margin-left:5px;
+	}
+}
+
+nav.navbar div#navbar a.inloggen {
+	color:#ffffff;
+	padding:5px 15px;	
+	margin:10px 10px 0 10px;
+}
+nav.navbar div#navbar ul.nav > li > a.inloggen:hover {
+	background-color:#419641;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	nav.navbar ul.nav li a {
+		padding:15px 7px;
+	}
+}
+
+/* Header
+ */
+div.header div.container {
+	margin-top:20px;
+	height:50px;
+	border-radius:10px;
+	background-image:url(/images/layout/ravib_bg.jpg);
+	background-position:center 0;
+	background-size:cover;
+}
+
+@media (max-width:767px) {
+	div.header div.container {
+		position:relative;
+		top:-20px;
+		height:40px;
+		border-radius:0;
+	}
+}
+
+/* Page
+ */
+div.wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+div.content div.container {
+	min-height:250px;
+	padding-bottom:100px;
+	position:relative;
+}
+
+@media (min-width:768px) {
+	div.content {
+		margin-top:40px;
+	}
+}
+@media (max-width:767px) {
+	div.content div.container {
+		padding-bottom:200px;
+	}
+}
+
+input.form-control, textarea.form-control, select.form-control {
+	max-width:500px;
+	margin-bottom:5px;
+}
+
+@media (max-width:767px) {
+	input.form-control, textarea.form-control, select.form-control {
+		font-size:16px;
+    }
+}
+
+textarea.form-control {
+	height:75px;
+}
+
+div.btn-group {
+	margin:15px 10px 10px 0;
+}
+
+.btn {
+	padding:4px 24px;
+}
+
+.btn-xs {
+	padding:0 16px;
+}
+
+table.table-hover tbody tr:hover {
+	cursor:pointer;
+}
+
+/* Footer
+ */
+div.footer {
+	width:100%;
+	position:absolute;
+	bottom:0;
+	background-color:#e0e0e0;
+	color:#808080;
+	font-size:11.5px;
+	padding:20px 0;
+	border-top:2px solid #b0b0b0;
+	text-align:center;
+}
+
+div.footer span {
+	text-align:center;
+	display:inline-block;
+}
+
+div.footer a {
+	color:#d08080;
+}
+
+@media (min-width:768px) {
+	div.footer span:before {
+		content:"|";
+		margin:0 20px;
+	}
+	div.footer span:first-child:before {
+		content:"";
+		margin:0;
+	}
+}
+
+@media (max-width:767px) {
+	div.footer span {
+		display:block;
+		margin-bottom:10px;
+	}
+}

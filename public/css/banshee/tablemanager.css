@@ -1,0 +1,27 @@
+div.search {
+	margin:40px auto 0 auto;
+	width:200px;
+}
+
+div.datatable {
+	clear:both;
+	overflow:auto;
+	margin-bottom:15px;
+}
+
+table.datatable tr.click:hover {
+	color:#ff8000;
+	cursor:pointer;
+}
+
+div.content ul.pagination {
+	margin-top:15px;
+}
+
+div.left {
+	float:left;
+}
+
+div.right {
+	float:right;
+}

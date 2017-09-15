@@ -1,0 +1,44 @@
+ul.breadcrumbs {
+	text-align:right;
+	margin-top:-25px;
+	margin-bottom:5px;
+	height:22px;
+}
+
+ul.breadcrumbs li {
+	display:inline;
+}
+
+ul.breadcrumbs li.current a {
+	color:#f0b000;
+}
+
+ul.breadcrumbs li:after {
+	content:">>";
+	margin:0 20px;
+}
+
+ul.breadcrumbs li:last-child:after {
+	content:none;
+}
+
+@media (max-width:767px) {
+	ul.breadcrumbs {
+		margin-top:5px;
+		height:auto;
+	}
+
+	ul.breadcrumbs li {
+		display:block;
+	}
+
+	ul.breadcrumbs li:before {
+		content:">>";
+		margin-right:5px;
+	}
+
+	ul.breadcrumbs li:after {
+		content:none;
+		margin:0;
+	}
+}

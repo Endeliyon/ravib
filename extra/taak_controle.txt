@@ -1,0 +1,14 @@
+<html>
+<body>
+<p>Hallo [NAME],</p>
+
+<p>De volgende taak inzake [CASE] is toegewezen aan [ACTOR].<p>
+
+<p><b>[MEASURE]</b></p>
+<p style="white-space:pre-wrap ; border-left:1px solid #ff0000 ; padding-left:10px">[INFORMATION]</p>
+
+<p>Jij bent aangewezen als controleur. Je kan de taak gereed melden via <a href="[LINK]">deze link</a>.</p>
+
+<p>Deze e-mail is automatisch gegenereerd door RAVIB.</p>
+</body>
+</html>
