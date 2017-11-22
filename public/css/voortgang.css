@@ -18,6 +18,7 @@ div.categories h3 {
 
 div.categories div.progress {
 	margin-bottom:5px;
+	cursor:default;
 }
 
 table.iso {
