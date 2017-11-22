@@ -8,7 +8,7 @@
 //
 //-->
 <xsl:template match="overview">
-<p>Deze Privacy Impact Assessment (PIA) tool is een implementatie van de PIA v1.2 zoals <a href="http://www.norea.nl/Norea/Actueel/Nieuws/PIA+nieuwe+versie.aspx">uitgegeven door NOREA</a>.</p>
+<p>Deze Privacy Impact Assessment (PIA) tool is een implementatie van de PIA v1.2 zoals <a href="http://www.norea.nl/download/?id=522">uitgegeven door NOREA</a>.</p>
 <table class="table table-condensed table-striped">
 <thead>
 <tr>
