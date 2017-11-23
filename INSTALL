@@ -16,6 +16,7 @@ Use the directory 'public' as the webroot directory and allow PHP execution. If 
 	}
 
 For Apache, there is a .htaccess file in the 'public' directory which contains the required URL rewriting rules.
+To upload files and create directories via the CMS Apache needs permission in the public/files folder.
 
 Configure PHP
 -------------
