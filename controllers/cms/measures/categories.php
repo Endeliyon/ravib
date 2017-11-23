@@ -7,7 +7,7 @@
 		protected $name = "Measure category";
 		protected $pathinfo_offset = 3;
 		protected $back = "cms/measures";
-		protected $icon = "measure_categories.png";
+		protected $icon = "categories.png";
 		protected $browsing = null;
 
 		public function execute() {
