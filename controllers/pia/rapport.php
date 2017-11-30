@@ -122,9 +122,8 @@
 				$pdf->Ln(5);
 			}
 
-			header("Content-Disposition: attachment; filename=pia_rapport_".$pia_id.".pdf");
-
-			$pdf->Output();
+			$pia_name = $this->generate_filename($this->pia["name"]);
+                        $pdf->Output($pia_name." - PIA.pdf", "I");
 		}
 
 		public function execute() {
